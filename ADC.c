@@ -15,7 +15,8 @@ int main(void) //main starts
 } //main end
 
 ISR (ADC_vect){
-	float x = ADCH;
+	uint8_t x = ADCL;
+	uint16_t ten_bit_reading = (ADCH << 2) | (x >> 6);
 	ADCSRA |= (1<<ADSC);
 }
 

@@ -1,3 +1,13 @@
+/****************************   
+
+this is a simple water level detection project(which is tested using Proteus) in which I've used probes to detct the level of the water, used 7-segment to display the output.(actually I've used LCD at the beginning but I found out that in this project I didn't need LCD at all).
+when the tank is empty 0 will be displayed on the 7-segment, And when it reaches the 7th probe an alarm will be turned on for 1 second, then turned off for .5 second.
+When the tank is Full the alarm will be turned on continuously.
+If we want to add a controlled valve to control the flow so It might be added and contolled using PWM or (on/off) control...But no need for that in the current project.
+
+****************************/
+
+
 #ifndef F_CPU
 #define F_CPU 1000000UL // 1 MHz clock speed
 #endif
